@@ -3,7 +3,7 @@ var router = express.Router()
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Default App' })
+  res.render('index', { title: 'BCD JS Tools' })
 })
 
 module.exports = router
