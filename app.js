@@ -6,6 +6,7 @@ var logger = require('morgan')
 
 var indexRouter = require('./routes/index')
 var usersRouter = require('./routes/users')
+const chartMultilineRouter = require('./routes/chart-multiline')
 
 var app = express()
 
@@ -20,6 +21,7 @@ app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/', indexRouter)
+app.use('/multilinechart', chartMultilineRouter)
 app.use('/users', usersRouter)
 
 // catch 404 and forward to error handler
