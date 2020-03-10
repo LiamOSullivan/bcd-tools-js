@@ -11,10 +11,15 @@ block content
   #main
     #svg-map_container
       //- Style a responsive image from SVG using img()
-      img(src='/images/svg-map.svg')
+      //- img(src='/images/svg-map.svg')
+      
+      //- Dynamically load into an SVG div
+      <svg id="map" width="100%"></svg>
   
   small Sources: <br>
     a(href = 'https://datascience.blog.wzb.eu/2016/08/29/bringing-svg-to-life-with-d3-js/') Bringing SVG to life with D3
 
 
 append scripts
+    script(src="/lib/d3v5/d3.js")
+    script(src="/javascripts/svg-map.js")
