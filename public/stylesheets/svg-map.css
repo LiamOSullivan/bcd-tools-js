@@ -10,7 +10,7 @@
 }
 
 #svg-map_container {
-  width: 50%;
+  width: 100%;
   height: inherit;
   max-width: 530px;
   float: left;
