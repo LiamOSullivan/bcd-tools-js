@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+#main {
+  width: 75%;
+  height: 300px;
+  border: solid 2px black;
+
+}
+
+#svg-map_container {
+  width: 50%;
+  height: inherit;
+  max-width: 530px;
+  float: left;
+  border: dashed 2px black;
+  padding: 10px;
+}
+/* Style a responsive img  */
+#svg-map_container img{
+  width: 100%;
+  height: auto;
+}
+
+#some_content {
+  float: left;
+  padding: 2em;
+}

@@ -1,5 +1,20 @@
 extends layout
 
+append head
+  link(rel='stylesheet', href='/stylesheets/svg-map.css')
+
+
 block content
   h1= title
   p #{title}
+  
+  #main
+    #svg-map_container
+      //- Style a responsive image from SVG using img()
+      img(src='/images/svg-map.svg')
+  
+  small Sources: <br>
+    a(href = 'https://datascience.blog.wzb.eu/2016/08/29/bringing-svg-to-life-with-d3-js/') Bringing SVG to life with D3
+
+
+append scripts
